@@ -269,10 +269,10 @@ async function cinemetaMovieInfo(imdbId) {
 
 // -------------------- Stremio manifest + handler --------------------
 const manifest = {
-  id: "org.knaben.privatestreams",
-  version: "4.0.0",
+  id: "org.knaben.streams",
+  version: "1.0.0",
   name: "Knaben",
-  description: "Displays streams with seeders + filesize like Stremio rich rows (for your own content).",
+  description: "Sources content from Knaben.org",
   resources: ["stream"],
   types: ["series", "movie"],
   catalogs: [],
@@ -384,4 +384,5 @@ for (const q of queries) {
 serveHTTP(builder.getInterface(), { port: PORT, host: "0.0.0.0" });
 
 console.log(`Knaben addon running at http://127.0.0.1:${PORT}/manifest.json`);
+
 console.log(`LAN install URL: http://YOUR_PC_IP:${PORT}/manifest.json`);
