@@ -1,0 +1,15 @@
+{
+  "name": "knaben-stremio-addon",
+  "version": "1.0.0",
+  "description": "My Stremio addon",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "node-fetch": "^2.7.0",
+    "parse-torrent": "^9.1.5",
+    "stremio-addon-sdk": "^1.6.10"
+  }
+}
